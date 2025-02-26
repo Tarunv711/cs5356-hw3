@@ -134,7 +134,7 @@ const displayWeatherData = (data) => {
     document.getElementById('weather-display').innerHTML = `
         <div class="weather-temp">${temperature}°F ${weatherIcon}</div>
         <div class="weather-details">
-            <div class="weather-location">Ithaca, NY</div>
+            <div class="weather-location">New York, NY</div>
             <div class="weather-description">${description}</div>
         </div>
     `;
@@ -142,9 +142,9 @@ const displayWeatherData = (data) => {
     // Add a note about the API for the assignment requirements
     document.getElementById('weather-display').insertAdjacentHTML('afterend', `
         <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
-            <em>Note for assignment: This section fetches real-time weather data from the Open-Meteo API. 
-            The API returns current temperature and weather code data for Ithaca, NY (Cornell's location).
-            I process this data using JavaScript to display it in a user-friendly format with appropriate weather icons.</em>
+            <em>Note for assignment: This section fetches real-time weather data using the Open-Meteo API. 
+            The API returns current temperature and weather code data for New York, NY.
+            I process this data using JavaScript to display it.</em>
         </p>
     `);
 };
